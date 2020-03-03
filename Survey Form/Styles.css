@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html, body {
+  background-color: #cdd;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+#survey-form {
+  display: grid;
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  grid-template-columns: 45% 55%;
+  align-items: right;
+}
+
+.labels {
+  text-align: right;
+  display: inline-block;
+  margin: 10px;
+  padding-top: 15px;
+  vertical-align: top;
+}
+
+.rightTab {
+  text-align: left;
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 250px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.userFeelings, input[type="checkbox"]{
+    float: left;
+    margin-right: 10px;
+  }
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#textarea {
+  height: 50px;
+  resize: vertical;
+}
+
+#submit {
+  width: 90px;
+  height: 40px;
+  margin: 10px;
+  border: 0px solid;
+  color: white;
+  background-color: #242;
+  font-size: 1em;
+  margin-left: 90%;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
