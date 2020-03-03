@@ -1,0 +1,78 @@
+<header class="header">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is a survey template </p>
+</header>
+
+<form id="survey-form">
+       <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+  
+       <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+        <div class="rightTab">
+        <input autofocus type="text" name="name" id="email" class="input-field" placeholder="Enter your Email" required>
+      </div>
+  
+       <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+        <div class="rightTab">
+        <input autofocus type="number" name="age" id="number" class="input-field" min="1" max="120" placeholder="Enter your age" required>
+      </div>
+  
+       <div class="labels">
+        <label for="current-sit">* Which option best describes your current life situation: </label>
+      </div>
+        <div class="rightTab">
+        <select type="text" name="current-sit" id="dropdown" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="loser">Single and ready to mingle</option>
+          <option value="loner">Content with my current situation</option>
+          <option value="depressed">Happily married</option>
+          <option value="happy">In between projects</option>
+          <option value="other">Other</option>
+         </select>
+      </div>
+  
+    <div class="labels">
+        <label for="userFeelings">How likely are you to eat your own arm after reading this survey?</label>        
+    </div>
+    <div class="rightTab">
+      <ul style="list-style: none;">
+        <li class="radio"><label>Not likely<input name="radio-buttons" value="1"  type="radio" class="userFeelings" ></label></li>
+        <li class="radio"><label>Thinkin about it<input name="radio-buttons" value="2"  type="radio" class="userFeelings" ></label></li>
+        <li class="radio"><label>Current life situation<input name="radio-buttons" value="3"  type="radio" class="userFeelings" ></label></li>
+      </ul>
+    </div>
+  
+    <div class="labels">
+      <label for="like">What did you enjoy about this survey?</label>
+    </div>
+    <div class="rightTab">
+      <ul>
+        <li class="checkbox"><label>Its originality<input name="prefer" value="1" type="checkbox" class="userFeelings"></label></li>
+        <li class="checkbox"><label>Its Awesomenimity<input name="prefer" value="2" type="checkbox" class="userFeelings"></label></li>
+        <li class="checkbox"><label>It was just great<input name="prefer" value="3" type="checkbox" class="userFeelings"></label></li>
+        <li class="checkbox"><label>It made me get my life together again<input name="prefer" value="4" type="checkbox" class="userFeelings"></label></li>
+        <li class="checkbox"><label>It taught me thousands of things<input name="prefer" value="5" type="checkbox" class="userFeelings"></label></li>
+        <li class="checkbox"><label>It helped me stop smoking<input name="prefer" value="6" type="checkbox" class="userFeelings"></label></li>
+        <li class="checkbox"><label>None of the above<input name="prefer" value="7" type="checkbox" class="userFeelings"></label></li>
+      </ul>
+    </div>
+  
+    <div class="labels">
+      <label for="moreinfo">Please provide any additional comments</label>
+    </div>
+    <div class="rightTab">
+      <textarea name="comments" type="textarea" class="input-field" placeholder="If you feel like you must...." id="textarea"></textarea>
+    </div>
+  
+    <button id="submit" type ="submit">
+      Submit
+    </button>
+</form>
